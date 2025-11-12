@@ -4,9 +4,11 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  background: #f8f3ea;
+  transition: background-color 1s ease, opacity 1s ease;
 }
 
-/* === HALAMAN UTAMA === */
+/* Halaman utama */
 .hero {
   height: 100vh;
   display: flex;
@@ -14,21 +16,17 @@ body {
   align-items: center;
   flex-direction: column;
   background: linear-gradient(180deg, #b57f4e 0%, #e6cba8 50%, #f8f3ea 100%);
-  position: relative;
 }
 
 .vondasi-text {
   font-family: 'Great Vibes', cursive;
   font-size: 12rem;
   color: #5c2d0b;
-  text-shadow: 
-    2px 2px 0 #e6b87a,
-    5px 5px 15px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 0 #e6b87a, 5px 5px 15px rgba(0, 0, 0, 0.3);
   margin: 0;
-  transition: transform 1s ease, opacity 1s ease;
 }
 
-/* === BAGIAN KEDUA === */
+/* Bagian bawah */
 .content {
   height: 100vh;
   display: flex;
@@ -37,7 +35,7 @@ body {
   background: linear-gradient(180deg, #f8f3ea 0%, #d8b890 100%);
 }
 
-/* === BUTTON MULAI === */
+/* Tombol Mulai */
 .start-btn {
   font-size: 1.8rem;
   padding: 20px 60px;
@@ -63,4 +61,10 @@ body {
   background: linear-gradient(180deg, #a76536, #6b3a1d);
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Efek fade-out saat transisi */
+.fade-out {
+  opacity: 0;
+  background-color: white;
 }
