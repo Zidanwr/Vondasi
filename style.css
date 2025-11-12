@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* === HALAMAN UTAMA === */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #b57f4e 0%, #e6cba8 50%, #f8f3ea 100%);
+  position: relative;
+}
+
+.vondasi-text {
+  font-family: 'Great Vibes', cursive;
+  font-size: 12rem;
+  color: #5c2d0b;
+  text-shadow: 
+    2px 2px 0 #e6b87a,
+    5px 5px 15px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  transition: transform 1s ease, opacity 1s ease;
+}
+
+/* === BAGIAN KEDUA === */
+.content {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #f8f3ea 0%, #d8b890 100%);
+}
+
+/* === BUTTON MULAI === */
+.start-btn {
+  font-size: 1.8rem;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(180deg, #8b542e, #5c2d0b);
+  color: #f8f3ea;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.start-btn.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.start-btn:hover {
+  background: linear-gradient(180deg, #a76536, #6b3a1d);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
