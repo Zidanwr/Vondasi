@@ -8,3 +8,10 @@ window.addEventListener('scroll', () => {
     button.classList.remove('show');
   }
 });
+
+function goToNextPage() {
+  document.body.classList.add('fade-out');
+  setTimeout(() => {
+    window.location.href = "halaman2.html";
+  }, 1000); // waktu fade 1 detik
+}
